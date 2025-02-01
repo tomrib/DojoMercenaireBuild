@@ -13,7 +13,7 @@ nav {
     z-index: 15; /* Place la navigation au-dessus du contenu */
     background-color: #fff; /* Couleur de fond (ajustez selon vos besoins) */
     padding: 5px; /* Espacement interne */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Ombre pour un effet plus réaliste */
+    box-shadow: 0 2px 5px #0000004d; /* Ombre pour un effet plus réaliste */
   }
 nav ul{
     list-style-type: none;
@@ -75,7 +75,7 @@ margin: 50px 0 0 0;
 }
 .text-home .text-center{
     text-align: center;
-
+    color: rgb(255, 123, 0);
 }
 .text-home div{
     margin: 2% 20%;
@@ -84,5 +84,15 @@ margin: 50px 0 0 0;
     margin: 2% 20%;
 }
 .text-home span {
-    font-weight: 800;
+    font-weight: 1000;
+    color: #ff7b00;
 }
+/* mis en page build*/
+.contenu {
+    opacity: 0; /* Initialement invisible */
+    transition: opacity 0.5s ease-in-out; /* Transition en douceur */
+  }
+  
+  .contenu.active {
+    opacity: 1; /* Visible quand la classe "active" est ajoutée */
+  }
