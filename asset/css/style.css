@@ -1,38 +1,60 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    font-family: "Noto Serif Todhri","Montserrat",serif;
+    font-family: "Noto Serif Todhri", "Montserrat", serif;
     font-weight: 400;
     font-style: normal;
 }
+
 nav {
-    position: fixed; /* Fixe la position de la navigation */
-    top: 0; /* Place la navigation en haut de la page */
-    left: 0; /* Aligne la navigation à gauche */
-    width: 100%; /* Étire la navigation sur toute la largeur de la page */
-    z-index: 15; /* Place la navigation au-dessus du contenu */
-    background-color: #fff; /* Couleur de fond (ajustez selon vos besoins) */
-    padding: 5px; /* Espacement interne */
-    box-shadow: 0 2px 5px #0000004d; /* Ombre pour un effet plus réaliste */
-  }
-nav ul{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 15;
+    background-color: #fff;
+    padding: 5px;
+    box-shadow: 0 2px 5px #0000004d;
+}
+
+nav ul {
     list-style-type: none;
     margin: 0;
     padding: 1%;
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
+
 nav ul a {
     text-decoration: none;
     color: rgb(10, 5, 5);
+    transition: color 0.3s ease; /* Ajout d'une transition pour une animation plus douce */
 }
+
 nav ul a:hover {
-    display: flexbox;
-    color: rgb(255, 123, 0); /* Couleur du texte au survol */
+    color: rgb(255, 123, 0);
 }
-nav ul li{
+
+nav ul li {
     padding: 0 15px;
+}
+
+/* Améliorations et suggestions */
+nav {
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+nav .container { /* Ajout d'un conteneur pour limiter la largeur du contenu */
+    max-width: 1200px; /* Ajustez cette valeur selon vos besoins */
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; /* Distribue l'espace entre le logo et les liens */
+    align-items: center;
+    padding: 0 20px; /* Ajout d'un espacement latéral */
 }
 
  /* Home du site  */
@@ -87,12 +109,3 @@ margin: 50px 0 0 0;
     font-weight: 1000;
     color: #ff7b00;
 }
-/* mis en page build*/
-.contenu {
-    opacity: 0; /* Initialement invisible */
-    transition: opacity 0.5s ease-in-out; /* Transition en douceur */
-  }
-  
-  .contenu.active {
-    opacity: 1; /* Visible quand la classe "active" est ajoutée */
-  }
