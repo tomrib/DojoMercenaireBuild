@@ -44,6 +44,7 @@ border: solid 2px red;
     transition: opacity 0.5s ease-in-out;
 }
 
+/* Section visible */
 .boxTank.active {
     display: block;
     opacity: 1;
@@ -52,17 +53,18 @@ border: solid 2px red;
     border-radius: 10px;
 }
 
+/* Style des boutons */
 button {
     padding: 10px 20px;
     margin: 5px;
+    cursor: pointer;
     border: none;
-    background-color: #007BFF;
-    color: white;
+    background-color: #f0f0f0;
     font-size: 16px;
     border-radius: 5px;
-    cursor: pointer;
 }
 
+/* Bouton actif */
 button.active {
-    background-color: #0056b3;
+    background-color: #ff7b00;
 }
